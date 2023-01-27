@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -1515,6 +1516,182 @@ progress {
   .gy-xxl-5 {
     --bs-gutter-y: 3rem;
   }
+}
+body {
+  background-color: #FFD700;
+  background-image: url("../images/mainbackground.png");
+  font-family: "Rubik", sans-serif;
+  font-size: var(--rootsize);
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  overflow: hidden;
+  position: relative;
+}
+
+header {
+  display: grid;
+  grid-area: "header";
+  justify-content: space-between;
+  padding: 1rem;
+}
+header a {
+  width: 100%;
+  max-width: 250px;
+}
+header img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+#cart {
+  position: relative;
+  width: 100%;
+  max-width: 50px;
+}
+#cart .label {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #DA291C;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+
+nav {
+  width: 100%;
+  background-color: #DA291C;
+  display: flex;
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 5px solid #DA291C;
+  display: inline-block;
+  text-transform: uppercase;
+  transition: ease-in-out 0.4s;
+}
+nav a:hover {
+  color: #FFD700;
+  border-color: #FFD700;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+main h2 {
+  width: 100%;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+article.product-card {
+  background-color: #000000;
+  border-bottom: 1rem solid #00af4d;
+  width: 31%;
+  overflow: hidden;
+  padding: 1rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+article.product-card article.product-card > * {
+  display: block;
+  clear: both;
+}
+article.product-card img {
+  width: 100%;
+}
+article.product-card a {
+  color: #FFD700;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+article.product-card h3 {
+  margin: 0.2rem 0 0.5rem 0;
+  text-transform: uppercase;
+}
+article.product-card button {
+  background-color: #00af4d;
+  color: #FFFFFF;
+  font-family: "Rubik", sans-serif;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+#cartview {
+  width: 100%;
+  max-width: 500px;
+  background-color: #000000;
+  color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  top: 70px;
+  border-left: 0.5rem solid #00af4d;
+  border-bottom: 0.5rem solid #00af4d;
+  padding: 1rem;
+  transition: ease-in-out 0.15s;
+}
+#cartview ul {
+  list-style-type: none;
+  padding: 0;
+}
+#cartview li {
+  border-bottom: 1px solid #00af4d;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  clear: both;
+}
+#cartview #cartview ul li > * {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+span.title {
+  width: calc(100% - 9rem);
+}
+
+span.price, span.quantity {
+  width: 3rem;
+}
+
+button.delete {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #DA291C;
+  color: #FFFFFF;
+  border: none;
+}
+
+article.product-card button.disabled {
+  background-color: grey;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

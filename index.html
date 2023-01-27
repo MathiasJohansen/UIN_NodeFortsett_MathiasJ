@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css\main.css" rel="stylesheet" type="text/css">
+    <title>LEGO-DUDES WEBSHOP</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html">
+                <img src="images/LD_logo.svg" alt="LEGO-DUDES" />
+            </a>
+            <figure id="cart" onClick="toggleCart()">
+                <span class="label">0</span>
+                <img src="images/legocart.svg" alt="Handlekurv" />
+            </figure>
+        </header>
+
+        <section id="cartview" class="hidden">
+            <h3>Din handlevogn</h3>
+            <ul>
+                <li>
+                    Du har ingen varer i handlevognen
+                </li>
+            </ul>
+            <p>Totalt kr. <span id="total">0</span></p>
+        </section>
+        <nav>
+            <a href="city.html">City</a>
+            <a class="active" href="ninjago.html">Ninjago</a>
+            <a href="castle.html">Castle and Knights</a>
+            <a href="marine-pirates.html">Marine and Pirates</a>
+            <a href="movie-characters.html">Movie characters</a>
+        </nav>
+
+        <main>
+            <h2>Ninjago</h2>
+        </main>
+
+    </div>
+    <script src="legodudes.js"></script>
+</body>
+</html>
