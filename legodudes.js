@@ -21,7 +21,7 @@ function renderProducts() {
 
 let prodList = ""
 let storage = ""
-products.map(prod => prodList += `<article class="product-card">
+products.map(prod => prodList += `<article class="product-card col-3">
     <img src="images/PROD_${prod.imagefile}" alt="Produktbilde av ${prod.title}" />
     <a href="ninjago.html">Ninjago</a>
     <h3>${prod.title}</h3>
